@@ -1,0 +1,7 @@
+先修改bin/run.sh
+
+1. industry为行业关键词, 程序会使用该关键词寻找对应的company
+2. percent为UV量级分位数, 例如percent=0.75表示取该行业中UV量排在前25%的广告主
+3. 运行的结果位于data/行业名 目录中
+4. 运行run.sh 会有一些环境依赖, 需根据提示进行安装
+5. wmd计算中默认使用cosine距离
