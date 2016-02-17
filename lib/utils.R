@@ -3,6 +3,7 @@ options(scipen=200)
 read.file.func <- function(file.path){
     d <- read.csv(file=file.path,
                   header=F,
+                  quote="",
                   stringsAsFactors=F,
                   sep='\t')
 
