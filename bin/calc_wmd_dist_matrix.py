@@ -327,7 +327,7 @@ def main():
     filter_action_by_uv(comp_dict, 100)
 
     # calc dist between two company
-    res_file = "../data/" + industry + "/company_dist_euc"
+    res_file = "../data/" + industry + "/company_dist"
     calc_company_dist(res_file, comp_dict, dm, vob_index_dict)
 
 

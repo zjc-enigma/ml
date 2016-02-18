@@ -13,9 +13,11 @@ industry = sys.argv[1]
 embed_data_path = "../data/" + industry + "/embed_dat"
 embed_vocab_path = "../data/" + industry + "/embed_vocab"
 vector_model_path = "../data/" + industry + "/user_vector"
+if os.path.exists(embed_data_path):
+    os.remove(embed_data_path)
 
-os.remove(embed_data_path)
-os.remove(embed_vocab_path)
+if os.path.exists(embed_vocab_path):
+    os.remove(embed_vocab_path)
 
 if not os.path.exists(embed_data_path):
     print("Caching word embeddings in memmapped format...")
